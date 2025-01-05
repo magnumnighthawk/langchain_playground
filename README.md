@@ -1,15 +1,16 @@
 # LangChain Food Tips Generator
 
-A simple Python application that generates food tips using LangChain and OpenAI's GPT-3.5 model.
+A simple Python application that generates food tips using LangChain and OpenAI's GPT-3.5 model or HuggingFace models.
 
 ## Description
 
-This project demonstrates the basic usage of LangChain to create a chain that generates customized food tips based on sentiment and keyword inputs. It uses OpenAI's GPT-3.5-turbo-instruct model to generate human-like responses.
+This project demonstrates the basic usage of LangChain to create a chain that generates customized food tips based on sentiment and keyword inputs. It supports both OpenAI's GPT-3.5-turbo-instruct model and HuggingFace models to generate human-like responses.
 
 ## Prerequisites
 
 - Python 3.7+
-- OpenAI API key
+- OpenAI API key (if using OpenAI)
+- HuggingFace API token (if using HuggingFace)
 
 ## Installation
 
@@ -17,15 +18,24 @@ This project demonstrates the basic usage of LangChain to create a chain that ge
 
 2. Install required packages:
 ```bash
+# For OpenAI
 pip install langchain langchain-community openai
+
+# For HuggingFace
+pip install langchain langchain-community langchain-huggingface
 ```
 
-3. Set up your OpenAI API key:
-   - Replace `"your_api_key_here"` in `chain.py` with your actual OpenAI API key
-   - Alternatively, set it as an environment variable:
-```bash
-export OPENAI_API_KEY='your-api-key'
-```
+3. Set up your API credentials:
+   
+   For OpenAI:
+   ```bash
+   export OPENAI_API_KEY='your-openai-api-key'
+   ```
+
+   For HuggingFace:
+   ```bash
+   export HUGGINGFACEHUB_API_TOKEN='your-huggingface-api-token'
+   ```
 
 ## Usage
 
@@ -35,10 +45,15 @@ Run the script using Python:
 python chain.py
 ```
 
-You can modify the `sentiment` and `keyword` parameters in the code to generate different types of tips:
+You can modify the model settings in the code:
 
 ```python
-response = chain.run({'sentiment': "great", 'keyword': "food"})
+# For OpenAI
+llm = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0.7)
+
+# For HuggingFace
+llm = HuggingFaceHub(repo_id="google/flan-t5-base",
+                     model_kwargs={"temperature": 0.9})
 ```
 
 ## Example Output
