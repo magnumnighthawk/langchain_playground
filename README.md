@@ -4,7 +4,7 @@ A simple Python application that generates food tips using LangChain and OpenAI'
 
 ## Description
 
-This project demonstrates the basic usage of LangChain to create a chain that generates customized food tips based on sentiment and keyword inputs. It supports both OpenAI's GPT-3.5-turbo-instruct model and HuggingFace models to generate human-like responses.
+This project demonstrates the basic usage of LangChain to create a chain that generates customized food tips based on sentiment and keyword inputs. It supports both OpenAI's GPT-3.5-turbo-instruct model and HuggingFace models to generate human-like responses. Additionally, it includes tools for searching YouTube for relevant recipe videos.
 
 ## Prerequisites
 
@@ -67,13 +67,9 @@ The program will generate tips based on the provided sentiment and keyword. For 
 
 - Customizable prompt template
 - Adjustable temperature for response creativity
-- Simple and easy to modify for different use cases
-
+- Integration with YouTube for recipe video suggestions
+- Functionality to serialize messages for easier handling
 
 ## Contributing
 
 Feel free to submit issues and pull requests.
-
-
-Here's the README.md content as a string within quotes:
-

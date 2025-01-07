@@ -1,4 +1,4 @@
-from langchain_community.llms import OpenAI
+from langchain_openai import OpenAI
 # To use HuggingFaceHub, you need to install the langchain-huggingface package
 # from langchain import HuggingFaceHub
 from langchain import PromptTemplate
