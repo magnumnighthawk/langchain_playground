@@ -18,12 +18,11 @@ This project demonstrates the basic usage of LangChain to create a chain that ge
 
 2. Install required packages:
 ```bash
-# For OpenAI
-pip install langchain langchain-community openai
-
-# For HuggingFace
-pip install langchain langchain-community langchain-huggingface
+pip install -r requirements.txt
 ```
+
+This command tells `pip` to read the `requirements.txt` file and install all the packages specified in it. Make sure you run this command in the directory where your `requirements.txt` file is located.
+
 
 3. Set up your API credentials:
    
@@ -69,6 +68,9 @@ The program will generate tips based on the provided sentiment and keyword. For 
 - Adjustable temperature for response creativity
 - Integration with YouTube for recipe video suggestions
 - Functionality to serialize messages for easier handling
+
+## New Features
+- Added a new feature for generating recipe suggestions based on user preferences.
 
 ## Contributing
 
