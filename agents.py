@@ -42,13 +42,13 @@ def list_available_tools():
 #     print("No tools found") 
 
     
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.9)
+chat = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.9)
 prompt = "Using south indian cuisine, create the perfect protein rich breakfast for a 30 year old male looking to build muscle and lose weight. Suggest some recipes on Youtube and some good blog posts"
 
 youtube_search = YouTubeSearchTool()
 tavily_search = TavilySearchResults(max_results=2)
 
-agent = create_react_agent(llm, tools=[youtube_search, tavily_search])
+agent = create_react_agent(chat, tools=[youtube_search, tavily_search])
 response = agent.invoke({"messages": [HumanMessage(content=prompt)]})
 
 print(response["messages"])
