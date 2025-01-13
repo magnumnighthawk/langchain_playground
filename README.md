@@ -1,10 +1,10 @@
 # LangChain Food Tips Generator
 
-A simple Python application that generates food tips using LangChain and OpenAI's GPT-3.5 model or HuggingFace models.
+A simple Python application that generates food tips using LangChain and OpenAI's GPT-3.5 model or HuggingFace models. The application also integrates tools for searching YouTube for relevant recipe videos.
 
 ## Description
 
-This project demonstrates the basic usage of LangChain to create a chain that generates customized food tips based on sentiment and keyword inputs. It supports both OpenAI's GPT-3.5-turbo-instruct model and HuggingFace models to generate human-like responses. Additionally, it includes tools for searching YouTube for relevant recipe videos.
+This project demonstrates the basic usage of LangChain to create a chain that generates customized food tips based on sentiment and keyword inputs. It supports both OpenAI's GPT-3.5-turbo-instruct model and HuggingFace models to generate human-like responses. Additionally, it includes tools for searching YouTube for relevant recipe videos and provides a chatbot interface for user interaction.
 
 ## Prerequisites
 
@@ -16,16 +16,21 @@ This project demonstrates the basic usage of LangChain to create a chain that ge
 
 1. Clone this repository:
 
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+
 2. Install required packages:
-```bash
-pip install -r requirements.txt
-```
 
-This command tells `pip` to read the `requirements.txt` file and install all the packages specified in it. Make sure you run this command in the directory where your `requirements.txt` file is located.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+   This command tells `pip` to read the `requirements.txt` file and install all the packages specified in it. Make sure you run this command in the directory where your `requirements.txt` file is located.
 
 3. Set up your API credentials:
-   
+
    For OpenAI:
    ```bash
    export OPENAI_API_KEY='your-openai-api-key'
@@ -41,7 +46,7 @@ This command tells `pip` to read the `requirements.txt` file and install all the
 Run the script using Python:
 
 ```bash
-python chain.py
+python chatbot.py
 ```
 
 You can modify the model settings in the code:
@@ -68,9 +73,12 @@ The program will generate tips based on the provided sentiment and keyword. For 
 - Adjustable temperature for response creativity
 - Integration with YouTube for recipe video suggestions
 - Functionality to serialize messages for easier handling
+- Interactive chatbot interface for user queries
 
 ## New Features
+
 - Added a new feature for generating recipe suggestions based on user preferences.
+- Integrated YouTube search for relevant recipe videos.
 
 ## Contributing
 
