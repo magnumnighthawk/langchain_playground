@@ -60,6 +60,26 @@ llm = HuggingFaceHub(repo_id="google/flan-t5-base",
                      model_kwargs={"temperature": 0.9})
 ```
 
+### Running in Jupyter Notebook
+
+To run the program in a Jupyter Notebook:
+
+1. Install Jupyter Notebook:
+
+   ```bash
+   pip install notebook
+   ```
+
+2. Start Jupyter Notebook:
+
+   ```bash
+   jupyter notebook
+   ```
+
+3. Create a new Python notebook and copy the relevant code from `langgraphing.py` into the notebook cells.
+
+4. Run the notebook cells to execute the program and interact with the chatbot.
+
 ## Example Output
 
 The program will generate tips based on the provided sentiment and keyword. For example:
@@ -79,6 +99,7 @@ The program will generate tips based on the provided sentiment and keyword. For 
 
 - Added a new feature for generating recipe suggestions based on user preferences.
 - Integrated YouTube search for relevant recipe videos.
+- Instructions for running the program in Jupyter Notebook.
 
 ## Contributing
 
