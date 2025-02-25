@@ -6,6 +6,7 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
 from dotenv import load_dotenv
+from pprint import pprint
 
 # Load environment variables from .env file
 load_dotenv()
@@ -51,4 +52,5 @@ tavily_search = TavilySearchResults(max_results=2)
 agent = create_react_agent(chat, tools=[youtube_search, tavily_search])
 response = agent.invoke({"messages": [HumanMessage(content=prompt)]})
 
-print(response["messages"])
+# Print the response in a pretty format
+pprint(response["messages"])
