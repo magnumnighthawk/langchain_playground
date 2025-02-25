@@ -7,3 +7,5 @@ langgraph
 langsmith
 langchain_anthropic
 notebook
+faiss-cpu
+numpy
