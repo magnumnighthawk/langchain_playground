@@ -1,10 +1,10 @@
-# GenAI & Agentic AI Capabilities Showcase
+# GenAI & Agentic AI Showcase
 
-A comprehensive showcase of various GenAI and agentic AI capabilities using LangChain, LangGraph, and various LLM models. This project demonstrates the evolution from basic LLM chains to complex agents with reasoning abilities, tool usage, and human-in-the-loop interactions.
+Showcasing various GenAI and agentic AI capabilities using LangChain, LangGraph, and LLM models. This project demonstrates the evolution from basic LLM chains to complex agents with reasoning, tool usage, and human-in-the-loop interactions.
 
 ## Description
 
-This project showcases a range of AI capabilities, from simple prompt-based text generation to complex agentic systems that can use tools, search the web, and interact with humans during decision-making processes. It demonstrates the integration of various models including OpenAI's GPT series and HuggingFace models, with frameworks like LangChain and LangGraph to create sophisticated AI systems.
+This project highlights AI capabilities from simple text generation to complex agentic systems that use tools, search the web, and interact with humans. It integrates models like OpenAI's GPT series and HuggingFace models with frameworks like LangChain and LangGraph to create sophisticated AI systems.
 
 ## Prerequisites
 
